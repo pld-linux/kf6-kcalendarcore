@@ -1,17 +1,17 @@
 #
 # Conditional build:
 %bcond_with	tests		# build with tests
-%define		kdeframever	6.3
+%define		kdeframever	6.4
 %define		qtver		5.15.2
 %define		kfname		kcalendarcore
 Summary:	kcalendarcore
 Name:		kf6-%{kfname}
-Version:	6.3.0
+Version:	6.4.0
 Release:	1
 License:	GPL v2+/LGPL v2.1+
 Group:		X11/Libraries
 Source0:	https://download.kde.org/stable/frameworks/%{kdeframever}/%{kfname}-%{version}.tar.xz
-# Source0-md5:	f70aa0d102cfb1f9f6eb737ea0700ba2
+# Source0-md5:	fa5ed4028594a7dce2a25277090af60c
 URL:		http://www.kde.org/
 BuildRequires:	Qt6Core-devel >= %{qtver}
 BuildRequires:	Qt6Gui-devel
@@ -86,6 +86,11 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_libdir}/libKF6CalendarCore.so.*.*
 %{_datadir}/qlogging-categories6/kcalendarcore.categories
 %{_datadir}/qlogging-categories6/kcalendarcore.renamecategories
+%dir %{_libdir}/qt6/qml/org/kde/calendarcore
+%{_libdir}/qt6/qml/org/kde/calendarcore/kcalendarcoreqml.qmltypes
+%{_libdir}/qt6/qml/org/kde/calendarcore/kde-qmlmodule.version
+%attr(755,root,root) %{_libdir}/qt6/qml/org/kde/calendarcore/libkcalendarcoreqml.so
+%{_libdir}/qt6/qml/org/kde/calendarcore/qmldir
 
 %files devel
 %defattr(644,root,root,755)
