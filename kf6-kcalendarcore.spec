@@ -1,17 +1,17 @@
 #
 # Conditional build:
 %bcond_with	tests		# build with tests
-%define		kdeframever	6.20
+%define		kdeframever	6.21
 %define		qtver		5.15.2
 %define		kfname		kcalendarcore
 Summary:	kcalendarcore
 Name:		kf6-%{kfname}
-Version:	6.20.0
+Version:	6.21.0
 Release:	1
 License:	GPL v2+/LGPL v2.1+
 Group:		X11/Libraries
 Source0:	https://download.kde.org/stable/frameworks/%{kdeframever}/%{kfname}-%{version}.tar.xz
-# Source0-md5:	f4485ddc5c32459d9d8c6c6da578afb8
+# Source0-md5:	8211a2dc1247a67c6f1e75da8cbe657b
 URL:		http://www.kde.org/
 BuildRequires:	Qt6Core-devel >= %{qtver}
 BuildRequires:	Qt6Gui-devel
