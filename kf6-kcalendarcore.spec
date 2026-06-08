@@ -38,7 +38,17 @@ scheduling standard iTIP.
 A calendar contains information like incidences (events, to-dos,
 journals), alarms, time zones, and other useful information. This API
 provides access to that calendar information via well known calendar
-formats iCalendar (or iCal) and the oolder vCalendar.
+formats iCalendar (or iCal) and the older vCalendar.
+
+%description -l pl.UTF-8
+Ta biblioteka daje dostęp i obsługę danych kalendarza. Wspiera
+standardowe formaty ICalendar i vCalendar, i standard grupowego
+planowania iTIP.
+
+Kalendarz zawiera informacje takie jak wydarzenia (zdarzenia, listy
+to-do, dzienniki), alarmy, strefy czasowe i inne przydatne informacje.
+Te API udostępnia informacje kalendarzowe przez znane formaty
+iCalendar (lub iCal) i starszy vCalendar.
 
 %package devel
 Summary:	Header files for %{kfname} development
