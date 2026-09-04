@@ -7,7 +7,7 @@
 Summary:	kcalendarcore
 Name:		kf6-%{kfname}
 Version:	6.29.0
-Release:	2
+Release:	3
 License:	GPL v2+/LGPL v2.1+
 Group:		X11/Libraries
 Source0:	https://download.kde.org/stable/frameworks/%{kdeframever}/%{kfname}-%{version}.tar.xz
